@@ -882,8 +882,10 @@
     $('body').addClass('pop_up');
     $('html').addClass('mobile');
 	var confirm = confirm("Press a button!\nEither OK or Cancel.");
-	if ( confirm == true && screenfull.enabled) {
+	if ( confirm == true ){
+		if( screenfull.enabled ) {
         screenfull.request();
+		}
 	}
     $(".s_pos_abs_1 a").click(closeMyPopup);
   } else {
