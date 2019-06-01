@@ -881,17 +881,10 @@
   if (getMobileOperatingSystem() !== 'unknown') {
     $('body').addClass('pop_up');
     $('html').addClass('mobile');
-	
-	$("document").ready(function() {
-    setTimeout(function() {
-        $('.s_pos_abs_1').trigger('click');
-    },10);
-});
-	$('.s_pos_abs_1').on('click', function() {
-	if (screenfull.isFullscreen !== true) {
-            screenfull.toggle();
-        }
-	});
+	var confirm = confirm("Press a button!\nEither OK or Cancel.");
+	if ( confirm == true && screenfull.enabled) {
+        screenfull.request();
+	}
     $(".s_pos_abs_1 a").click(closeMyPopup);
   } else {
     closeMyPopup();
