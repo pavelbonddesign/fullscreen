@@ -891,7 +891,7 @@ function GoInFullscreen(element) {
  
   if (getMobileOperatingSystem() !== 'unknown') {
     $("body").addClass('pop_up');
-	$('html').get(0);
+	$('#element').get(0);
     $(".s_pos_abs_1 a").click(closeMyPopup);
   } else {
     closeMyPopup();
