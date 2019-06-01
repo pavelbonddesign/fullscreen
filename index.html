@@ -879,11 +879,21 @@
 <script>
 
   if (getMobileOperatingSystem() !== 'unknown') {
-    $("body").addClass('pop_up');
+    $('body').addClass('pop_up');
+	
+	$("document").ready(function() {
+    setTimeout(function() {
+        $('.s_pos_abs_1').trigger('click');
+    },10);
+});
+	$('.s_pos_abs_1').on('click', function() {
 	if (screenfull.enabled) {
-	var html = document.documentElement;
-	screenfull.request(html);
+		var html = document.documentElement;
+		screenfull.request(html);
+	} else {
+		// Ignore or do something else
 	}
+	});
     $(".s_pos_abs_1 a").click(closeMyPopup);
   } else {
     closeMyPopup();
