@@ -1,0 +1,49 @@
+/* ::::: http://vk.com/css/al/lite.css?37 ::::: */
+
+#lite_css { display: none; }
+html { height: 100%; }
+body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin: 0px; padding: 0px; direction: ltr; font-family: tahoma,arial,verdana,sans-serif,Lucida Sans; font-size: 11px; height: 100%; }
+.fixed { position: fixed; }
+.scroll_fix_wrap { text-align: left; direction: ltr; height: 100%; }
+a { color: rgb(43, 88, 122); text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+.progress { display: none; width: 32px; height: 13px; background: transparent url('upload.gif') no-repeat scroll 50% 50%; }
+.fl_l { float: left; }
+div#utils { top: -30px; position: absolute; height: 20px; overflow: hidden; }
+.clear_fix::after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+#box_loader { position: absolute; left: 50%; margin: 0px auto 0px -50px; z-index: 1002; width: 100px; display: none; }
+#box_loader .back { background-color: rgb(0, 0, 0); opacity: 0.7; height: 50px; border-radius: 5px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.35); }
+#box_loader .loader { background: transparent url('upload_inv_mono.gif') no-repeat scroll 50% 50%; height: 50px; position: absolute; width: 100%; z-index: 100; }
+.flat_button::-moz-focus-inner { border: 0px none; }
+.button_blue button::-moz-focus-inner, .button_gray button::-moz-focus-inner { border: 0px none; }
+#system_msg { z-index: 5000; left: 0px; top: 0px; display: none; border-radius: 0px 0px 6px; padding: 7px 10px; }
+#global_prg { position: absolute; z-index: 400; }
+#box_layer { padding: 1px 0px 80px; }
+#layer_bg, #box_layer_bg, #layer_wrap, #box_layer_wrap { top: 0px; left: 0px; width: 100%; height: 100%; z-index: 500; overflow: hidden; display: none; }
+#box_layer_bg, #box_layer_wrap { z-index: 1000; }
+#layer_wrap, #box_layer_wrap { overflow: auto; }
+#box_layer_bg { background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.2; }
+/* ::::: http://vk.com/css/al/widgets.css?20 ::::: */
+
+#widgets_css { display: none; }
+body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; text-align: left; margin: 0px; padding: 0px; font-family: tahoma,verdana,arial,sans-serif,Lucida Sans; font-size: 11px; overflow: hidden; }
+a { color: rgb(43, 88, 122); text-decoration: none; cursor: pointer; }
+:first-child + html .t_filter_area { padding-bottom: 18px; }
+#like_body { background: transparent none repeat scroll 0% 0%; }
+.like_wrap { border-radius: 2px; -moz-user-select: none; padding: 4px 0px; cursor: pointer; display: block; }
+.like_wrap:hover { text-decoration: none; }
+.like_wrap:active { padding-top: 5px; padding-bottom: 3px; }
+.like_dived .like_wrap { margin-right: 8px; cursor: pointer; position: relative; }
+.like_left { width: 15px; height: 14px; float: left; border-right: 1px solid rgba(255, 255, 255, 0.24); padding-left: 5px; padding-right: 1px; }
+.like_right { color: rgb(255, 255, 255); float: left; padding: 0px 8px 1px 7px; line-height: 13px; text-align: center; }
+.like_icon { width: 10px; height: 10px; background: transparent url('like_widget.png') no-repeat scroll 0px 0px; overflow: hidden; }
+.like_wrap .icon_v, .like_wrap .icon_heart { transition: opacity 200ms linear 0s; }
+.like_wrap .icon_v { background-position: 0px -8px; position: absolute; margin: 2px 2px 1px 3px; width: 7px; height: 9px; }
+.like_wrap .icon_heart { background-position: -25px -8px; position: absolute; width: 10px; margin: 3px 2px 1px 1px; height: 9px; }
+.like_dived .like_wrap .icon_heart { opacity: 0; }
+.like_counter_wrap { display: block; border: 1px solid rgb(187, 191, 196); color: rgb(102, 108, 115); border-radius: 2px; cursor: pointer; margin-left: 1px; padding: 3px 5px 4px; font-weight: bold; line-height: 13px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.like_counter_wrap:hover { text-decoration: none; }
+.like_counter_wrap .arrow { position: absolute; width: 5px; height: 9px; background-position: 0px -27px; overflow: hidden; margin-left: -10px; margin-top: 2px; }
+.like_wrap, .like_dived_full .like_wrap .like_left { background-color: rgb(95, 131, 170); transition: background 200ms linear 0s; }
+.like_wrap:hover, .like_dived_full .like_wrap:hover .like_left { background-color: rgb(104, 144, 187); }
+.like_wrap:active, .like_dived_full .like_wrap:active .like_left { background-color: rgb(85, 117, 153); }

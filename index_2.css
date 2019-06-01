@@ -1,0 +1,49 @@
+/* ::::: http://vk.com/css/al/lite.css?37 ::::: */
+
+#lite_css { display: none; }
+html { height: 100%; }
+body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin: 0px; padding: 0px; direction: ltr; font-family: tahoma,arial,verdana,sans-serif,Lucida Sans; font-size: 11px; height: 100%; }
+.fixed { position: fixed; }
+.scroll_fix_wrap { text-align: left; direction: ltr; height: 100%; }
+a { color: rgb(43, 88, 122); text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+img { border: 0px none; }
+form { margin: 0px; padding: 0px; }
+.progress { display: none; width: 32px; height: 13px; background: transparent url('upload.gif') no-repeat scroll 50% 50%; }
+.fl_l { float: left; }
+div#utils { top: -30px; position: absolute; height: 20px; overflow: hidden; }
+.clear_fix::after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+.clear_fix { display: block; }
+.clear { float: none; clear: both; }
+#box_loader { position: absolute; left: 50%; margin: 0px auto 0px -50px; z-index: 1002; width: 100px; display: none; }
+#box_loader .back { background-color: rgb(0, 0, 0); opacity: 0.7; height: 50px; border-radius: 5px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.35); }
+#box_loader .loader { background: transparent url('upload_inv_mono.gif') no-repeat scroll 50% 50%; height: 50px; position: absolute; width: 100%; z-index: 100; }
+.flat_button::-moz-focus-inner { border: 0px none; }
+.button_blue button::-moz-focus-inner, .button_gray button::-moz-focus-inner { border: 0px none; }
+#system_msg { z-index: 5000; left: 0px; top: 0px; display: none; border-radius: 0px 0px 6px; padding: 7px 10px; }
+#global_prg { position: absolute; z-index: 400; }
+#box_layer { padding: 1px 0px 80px; }
+#layer_bg, #box_layer_bg, #layer_wrap, #box_layer_wrap { top: 0px; left: 0px; width: 100%; height: 100%; z-index: 500; overflow: hidden; display: none; }
+#box_layer_bg, #box_layer_wrap { z-index: 1000; }
+#layer_wrap, #box_layer_wrap { overflow: auto; }
+#box_layer_bg { background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.2; }
+/* ::::: http://vk.com/css/al/widget_community.css?63 ::::: */
+
+#widget_community_css { display: none; }
+.community_head { display: block; height: 22px; font-weight: bold; padding: 6px; vertical-align: middle; line-height: 1.81em; color: rgb(255, 255, 255); }
+.community_head:hover { text-decoration: none; }
+.wcommuinty_logo { display: inline-block; background: transparent url('w_logo.png') repeat scroll 0% 0%; width: 22px; height: 22px; }
+.community_square_pic { height: 47px; clear: both; overflow: hidden; padding-bottom: 3px; }
+.community_group_info { margin: 12px 0px 0px; }
+.community_group_name { font-weight: bold; padding-left: 10px; line-height: 140%; float: left; }
+.community_widget_bottom { text-align: center; }
+.community_groups_main { padding-bottom: 8px; }
+.join_community { border-radius: 3px; padding: 8px; line-height: 16px; transition: opacity 100ms linear 0s, background-color 100ms linear 0s; color: rgb(255, 255, 255); }
+.join_community:hover { text-decoration: none; opacity: 0.9; }
+.join_community:active { padding: 9px 8px 7px; }
+#wcommunity_name_cont { display: inline-block; vertical-align: top; overflow: hidden; margin-left: 8px; text-overflow: ellipsis; }
+.wcommunity_name { white-space: nowrap; vertical-align: top; line-height: 22px; }
+.community_only_info { margin-bottom: 4px; padding-left: 6px; }
+.color3_bg { background-color: rgb(91, 127, 166); }
+.color2 { color: rgb(43, 88, 122); }
+.color1_bg { background-color: rgb(255, 255, 255); }
