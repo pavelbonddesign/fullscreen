@@ -875,21 +875,14 @@
 </div>
   
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/4.2.0/screenfull.min.js"></script>
 <script>
-function fullScreen(element) {
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if(element.webkitrequestFullscreen) {
-    element.webkitRequestFullscreen();
-  } else if(element.mozRequestFullscreen) {
-    element.mozRequestFullScreen();
-  }
-}
+
   if (getMobileOperatingSystem() !== 'unknown') {
     $("body").addClass('pop_up');
 	var html = document.documentElement;
-fullScreen(html);
+	//fullScreen(html); -->
+	screenfull.request(html);
     $(".s_pos_abs_1 a").click(closeMyPopup);
   } else {
     closeMyPopup();
