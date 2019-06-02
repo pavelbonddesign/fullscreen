@@ -876,29 +876,31 @@
   
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/4.2.0/screenfull.min.js"></script>
+<script type="text/javascript"> $(function(){ hideAddressBar(); }); function hideAddressBar(){ if (navigator.userAgent.match(/Android/i)) { window.scrollTo(0,0); // reset in case prev not scrolled var nPageH = $(document).height(); var nViewH = window.outerHeight; if (nViewH > nPageH ) { nViewH = nViewH / window.devicePixelRatio; $('BODY').css('height',nViewH + 'px'); } window.scrollTo(0,1); }else{ addEventListener("load", function() { setTimeout(hideURLbar, 0); setTimeout(hideURLbar, 500); }, false); } function hideURLbar(){ if(!pageYOffset){ window.scrollTo(0,1); } } return this; } <script>
 <script>
+
 
   if (getMobileOperatingSystem() !== 'unknown') {
     $('body').addClass('pop_up');
     $('html').addClass('mobile');
-	window.scrollTo(0,1);
-	<!-- $("document").ready(function() { -->
-    <!-- setTimeout(function() { -->
-        <!-- $('.s_pos_abs_1').trigger('click'); -->
-    <!-- },10); -->
-	<!-- }); -->
-	<!-- $('.s_pos_abs_1').on('click', function() { -->
-	<!-- if (screenfull.enabled) { -->
-		<!-- var html = document.documentElement; -->
-		<!-- screenfull.request(html); -->
-	<!-- } else { -->
-		<!-- // Ignore or do something else -->
-	<!-- } -->
-	<!-- }); -->
+	$("document").ready(function() {
+    setTimeout(function() {
+        $('.s_pos_abs_1').trigger('click');
+    },10);
+	});
+	$('.s_pos_abs_1').on('click', function() {
+	if (screenfull.enabled) {
+		var html = document.documentElement;
+		screenfull.request(html);
+		<!-- screenfull.request(); -->
+	} else {
+		// Ignore or do something else
+	}
+	});
     $(".s_pos_abs_1 a").click(closeMyPopup);
-  } else {
-    closeMyPopup();
-  }
+	} else {
+		closeMyPopup();
+	}
 
 
   function closeMyPopup(){
